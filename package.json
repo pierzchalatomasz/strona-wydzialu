@@ -1,0 +1,25 @@
+{
+  "name": "strona-wydzialu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierzchalatomasz/strona-wydzialu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierzchalatomasz/strona-wydzialu/issues"
+  },
+  "homepage": "https://github.com/pierzchalatomasz/strona-wydzialu#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-less": "^3.1.0"
+  }
+}

@@ -1,0 +1,243 @@
+*, *::after, *::before {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    width: 100%;
+    color: #777;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.6em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+** Columns
+*/
+
+.row {
+    display: flex; 
+    align-items: center;
+    margin: -15px;
+    flex-wrap: wrap;
+}
+
+.col-center {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.col-50 {
+    width: 50%;
+    padding: 15px;
+}
+
+.col-33 {
+    width: 33.33%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 899px) {
+    .col-33, .col-50 {
+        width: 100%;
+    }
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background-image: url('..//img/mathematics.jpg'); 
+    position: relative; 
+    width: 100%; 
+    top: 0; 
+    left: 0; 
+    background-size: cover;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.85);
+}
+
+nav {
+    margin-top: 50px;
+    background: rgba(255,255,255,0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    align-items: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+}
+
+nav ul li {
+    display: flex;
+    width: 25%;
+    padding: 0 5px;
+}
+
+nav li a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 15px 30px;
+    letter-spacing: 2px;
+    width: 100%;
+}
+
+nav li a:hover, nav li a.active {
+    text-decoration: none;
+    background: rgba(33,159,209,0.5);
+    color: #fff;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1089px) {
+    nav ul {
+        margin: -5px 0;
+    }
+
+    nav ul li {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    nav ul {
+        margin: -5px 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.header-welcome {
+    font-size: 64px;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 120px;
+}
+
+.header-university {
+    font-size: 48px;
+    font-weight: 100;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 899px) {
+    .header-welcome {
+        font-size: 32px;
+    }   
+
+    .header-university {
+        font-size: 24px;
+    }
+}
+
+/*
+** section
+*/
+
+section {
+    padding: 50px 0;
+    line-height: 1.6em;
+}
+
+.section-dark {
+    background: #f4f4f4;
+}
+
+.section-header {
+    font-size: 32px;
+    color: #333;
+    font-weight: 900;
+    // text-align: center;
+}
+
+section p {
+    color: #777;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+/*
+** Footer
+*/
+
+footer {
+    padding: 30px 0; 
+    background: #222; 
+    color: rgba(255,255,255,0.3); 
+    font-size: 12px;
+}
+
+/*
+** Extras
+*/
+
+ul.styled-list {
+    list-style: none;
+    padding: 0;
+}
+
+
+.thumbnail {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
